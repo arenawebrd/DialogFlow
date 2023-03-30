@@ -1,15 +1,15 @@
 <p align="center">
 	<img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/Dialogflow_logo.svg/694px-Dialogflow_logo.svg.png?20171011172202" />	
 	</p>
-Os chatbots são uma parte essencial de todas as plataformas de atendimento ao cliente. 
+Los chatbots son una parte esencial de cada plataforma de servicio al cliente.
 </p>
-Se você tiver muitas conversas acontecendo em sua conta, dimensionar o suporte humano pode não ser eficaz. 
+Si tiene muchas conversaciones en curso en su cuenta, es posible que escalar el soporte humano no sea efectivo.
 </p>
-Você pode implantar um chatbot que ajude a responder a perguntas triviais e entregá-lo a um agente somente quando necessário.
+Puede implementar un chatbot que ayude a responder preguntas de trivia y entregárselo a un agente solo cuando sea necesario.
 </p>
-Dialogflow e Rasa.ai são as plataformas NLP mais bem avaliadas que permitem que você crie um bot com base no seu caso de uso. 
+Dialogflow y Rasa.ai son las plataformas NLP mejor calificadas que le permiten construir un bot basado en su caso de uso.
 </p>
-Neste artigo, veremos como você pode configurar um chatbot Dialogflow com Chatwoot.
+En este artículo, veremos cómo puede configurar un chatbot de Dialogflow con Chattwoot.
 </p>
 
 </p>
@@ -28,119 +28,119 @@ Neste artigo, veremos como você pode configurar um chatbot Dialogflow com Chatw
 ----------------------------------------------------------------------------
 </p>
 
-**Gostou do Tutorial? Faça sua Contribuição**
+** ¿Te gustó el tutorial? Haz tu aporte**
 
-<img src="https://github.com/EngajamentoFlow/quepasa/blob/main/Contribui%C3%A7%C3%A3o.png" alt="DialogFlow" width="200" />
-
-</p>
-----------------------------------------------------------------------------
-</p>
-
-
-**Configurando a integração do Dialogflow no Chatwoot**
-
-**Criar um novo Agente**
+<img src="https://github.com/EngagementoFlow/quepasa/blob/main/Contribui%C3%A7%C3%A3o.png" alt="DialogFlow" width="200" />
 
 </p>
-Acesse o Console do Dialogflow.
+-------------------------------------------------- --------------------------
+</p>
+
+
+**Configurando la integración de Dialogflow en Chatwoot**
+
+**Crear un nuevo Agente**
+
+</p>
+Accede a la Consola de Dialogflow.
 </p>
 https://dialogflow.cloud.google.com
 </p>
-Usaremos o Dialogflow Essentials para este artigo. Clique em "Criar novo agente". Ele mostraria opções como mostrado abaixo.
+Usaremos Dialogflow Essentials para este artículo. Haga clic en "Crear nuevo agente". Mostraría opciones como se muestra a continuación.
 </p>
 
 <img src="https://www.chatwoot.com/docs/assets/images/create-new-agent-51f6b6bc6e6da84e81c18c0bbc06986a.png" alt="DialogFlow" width="1000" />
 
-**Criar Interações**
+**Crear interacciones**
 
 </p>
-Você precisará criar intenções com base em como deseja que seu bot responda. 
+Deberá crear intenciones en función de cómo desea que responda su bot.
 </p>
-Haverá 2 intenções padrão no projeto chamadas "Default Fallback Intent" e "Default Welcome Intent", conforme mostrado abaixo
+Habrá 2 intentos predeterminados en el proyecto llamados "Intento alternativo predeterminado" e "Intento de bienvenida predeterminado" como se muestra a continuación
 </p>
 
 <img src="https://www.chatwoot.com/docs/assets/images/default-intents-1159dded08111f981981ea9513cff68f.png" alt="DialogFlow" width="1000" />
 
 </p>
 
-**Agora que a configuração básica do bot está concluída, vamos criar uma conta de serviço e conectá-la ao Chatwoot**
+**Ahora que la configuración básica del bot está lista, creemos una cuenta de servicio y conéctela a Chattwoot**
 
 </p>
-Você também pode criar intenções adicionais para seus casos de uso específicos.
+También puede crear intenciones adicionales para sus casos de uso específicos.
 </p>
-O Chatwoot também oferece suporte a intenções avançadas que permitem transferência de agente , mensagens interativas , etc.
+Chattwoot también admite intenciones avanzadas que permiten la transferencia de agentes, mensajería interactiva, etc.
 </p>
-consulte: Intenções avançadas
+ver: intenciones avanzadas
 </p>
 
-**Criar uma CONTA**
+**Crear una cuenta**
 
 </p>
-Para conectar este bot ao Chatwoot, você precisa criar uma conta de serviço em seu console do Google Cloud. 
+Para conectar este bot a Chattwoot, debe crear una cuenta de servicio en su consola de Google Cloud.
 </p>
-Navegue até o console do projeto na nuvem do Google clicando no ID do projeto nas configurações do projeto abaixo.
+Navegue a Google Cloud Project Console haciendo clic en el ID del proyecto en la Configuración del proyecto a continuación.
 </p>
 
 <img src="https://www.chatwoot.com/docs/assets/images/project-settings-7e5fb3d738a18ead8c0298b7af2b8276.png" alt="DialoFlow" width="1000" />
 
 </p>
-Navegue até IAM e administrador -> Contas de serviço . Você verá uma visualização como a abaixo. Clique em "Criar conta de serviço".
+Vaya a IAM y administración -> Cuentas de servicio. Verá una vista previa como la siguiente. Haga clic en "Crear cuenta de servicio".
 </p>
 
 <img src="https://www.chatwoot.com/docs/assets/images/service-account-console-418be807b0449cb5e3a1ba539a106407.png" alt="DialoFlow" width="1000" />
 
-Forneça um nome de conta de serviço e uma descrição conforme mostrado abaixo.
+Proporcione un nombre de cuenta de servicio y una descripción como se muestra a continuación.
 
 <img src="https://www.chatwoot.com/docs/assets/images/service-account-details-4ab284d92f85ffca4f9f18702dcfc5b7.png" alt="DialoFlow" width="1000" />
 
-Para fornecer acesso, selecione Dialogflow API Client no menu suspenso.
+Para proporcionar acceso, seleccione Dialogflow API Client en el menú desplegable.
 
 <img src="https://www.chatwoot.com/docs/assets/images/service-access-88029531f5f8437b409ed22d1e7cab8f.png" alt="DialoFlow" width="1000" />
 
-Continue e clique em "Concluído". Agora, você poderá ver o serviço listado no painel. O próximo passo é criar uma chave para que ela possa ser compartilhada com o Chatwoot. Clique na conta de serviço e clique na guia "Chaves". Em seguida, clique em "Adicionar chave". Você será capaz de ver uma tela como a abaixo.
+Continúe y haga clic en "Listo". Ahora podrá ver el servicio enumerado en el tablero. El siguiente paso es crear una clave para poder compartirla con Chattwoot. Haga clic en la cuenta de servicio y haga clic en la pestaña "Claves". Luego haga clic en "Agregar clave". Podrá ver una pantalla como la siguiente.
 
 <img src="https://www.chatwoot.com/docs/assets/images/add-keys-885720919305b703fa3979807b445c7a.png" alt="DialoFlow" width="1000" />
 
 </p>
 
-**Clique em "JSON" e clique em "Criar". Ele geraria uma chave para sua conta de serviço, baixaria a chave e a salvaria para uso posterior.**
+**Haga clic en "JSON" y haga clic en "Crear". Generaría una clave para su cuenta de servicio, descargaría la clave y la guardaría para su uso posterior.**
 
 </p>
-O Chatwoot possui uma integração nativa do Dialogflow. 
+Chattwoot tiene una integración nativa de Dialogflow.
 </p>
-Vá para "Configurações -> Aplicativos -> Dialogflow". 
+Vaya a "Configuración -> Aplicaciones -> Dialogflow".
 </p>
-Clique em "Configurar", você verá um botão para "Adicionar um novo gancho".
+Haga clic en "Configurar", verá un botón para "Agregar un nuevo gancho".
 </p>
-Você precisa adicionar "ID do projeto", "Arquivo de chave do projeto" e uma caixa de entrada para criar um gancho. 
+Debe agregar "ID del proyecto", "Archivo de clave del proyecto" y un cuadro de entrada para crear un gancho.
 </p>
-(Copie o conteúdo do arquivo de chave baixado anteriormente e cole-o na área de texto)
+(Copie el contenido del archivo clave previamente descargado y péguelo en el área de texto)
 </p>
 
 <img src="https://www.chatwoot.com/docs/assets/images/add-to-chatwoot-463fe037a8269b447e13e5f9c3d4c891.png" alt="Quepasa-logo" width="1000" />
 
 </p>
-Voilá! A integração está completa.
+¡Voila! La integración es completa.
 </p>
-Teste a caixa de entrada do site para ver se a consulta inicial é tratada pelo bot ou não
+Pruebe la bandeja de entrada del sitio para ver si el bot maneja la consulta inicial o no.
 </p>
 
-**Interações Avançadas**
+**Interacciones Avanzadas**
 
 </p>
-Criando uma 
+creando un
 </p>
-Depois que o usuário solicita falar com o agente, o Dialogflow precisa informar ao Chatwoot que um agente agora pode assumir a conversa.
+Después de que el usuario solicite hablar con el agente, Dialogflow debe informar a Chattwoot que un agente ahora puede hacerse cargo de la conversación.
 </p>
-Crie uma intenção chamada "Intenção de transferência" com frases de treinamento como "Fale com um agente" ou "Fale com um agente" etc. Para lidar com a
+Cree una intención llamada "Intención de transferencia" con frases de entrenamiento como "Hablar con un agente" o "Hablar con un agente", etc. para hacer frente a la
 </p>
-intenção de transferência, criaremos uma resposta "Carga útil personalizada" conforme mostrado abaixo.
+intento de transferencia, crearemos una respuesta de "Carga útil personalizada" como se muestra a continuación.
 </p>
 
 {
 </p>
-  "action": "handoff"
-  </p>
+    "action": "handoff"
+   </p>
 }
 
 </p>
@@ -148,53 +148,18 @@ intenção de transferência, criaremos uma resposta "Carga útil personalizada"
 <img src="https://www.chatwoot.com/docs/assets/images/handoff-intent-c24d32864b162046bd0ec929b0cc1be1.png" alt="Quepasa-logo" width="1000" />
 
 </p>
-Ao acionar uma intenção com a carga útil acima, o Chatwoot alternará o status da conversa para opene a entregará a um agente.
+Al activar una intención con la carga útil anterior, Chattwoot cambiará el estado de la conversación para abrirla y entregársela a un agente.
 </p>
 
-**Mensagens interativas**
+**Mensajes interactivos**
 
 </p>
-Nota: As mensagens interativas são suportadas apenas no canal do site no momento
+Nota: Por el momento, los mensajes interactivos solo se admiten en el canal del sitio web.
 </p>
-A integração do chatwoot dialogflow também suporta mensagens interativas . Os seguintes tipos de mensagens interativas são suportados:
+La integración de chatwoot de dialogflow también es compatible con la mensajería interactiva. Se admiten los siguientes tipos de mensajes interactivos:
 </p>
-Opções : acompanhamento suportado
+Opciones: soporte soporte
 </p>
-cartões
+tarjetas
 </p>
-Artigos
-</p>
-Criando uma mensagem interativa 
-</p>
-Você pode criar outras mensagens interativas alterando a carga conforme mencionado na documentação de mensagens interativas.
-</p>
-Crie uma intenção com as frases de treinamento necessárias e uma resposta "Custom Payload" conforme mostrado abaixo para uma mensagem de opções.
-</p>
-Quando o usuário interage com as mensagens de entrada.
-</p>
-O valor selecionado é enviado de volta ao dialogflow, para que você configure uma intenção de acompanhamento, se necessário.
-</p>
-Exemplo : configurar um intent com a frase de treinamento "Gosto de biryani" para os casos em que o contato selecionar a opção "biryani".
-</p>
-</p>
-Como um agente pode transferir a conversa de volta para o bot Dialoflow 
-</p>
-Quando o bot Dialoflow está conectado a uma caixa de entrada, as conversas são criadas com pendingstatus em vez de open. Isso permite que a triagem inicial
-</p>
-aconteça por meio do bot antes que a conversa seja passada para um agente. Quando handoffisso acontece, o status da conversa é alterado opene o bot para de
-</p>
-responder a ela.
-</p>
-Às vezes, os agentes gostariam de adiar uma conversa que foi transferida de volta para a fila do bot. Eles podem fazer isso alterando o status da conversa 
-</p>
-novamente pendingpara que o bot comece a responder a essa conversa novamente.
-
-
-</p>
-
-**Gostou do Tutorial? Faça sua Contribuição**
-
-<img src="https://github.com/EngajamentoFlow/quepasa/blob/main/Contribui%C3%A7%C3%A3o.png" alt="DialogFlow" width="200" />
-
-</p>
-----------------------------------------------------------------------------
+Artículos
